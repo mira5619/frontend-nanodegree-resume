@@ -24,6 +24,7 @@ var bio = {
         $("#header").prepend(formattedName);
         var formattedPicture = HTMLbioPic.replace("%data%", bio.biopic);
         $("#header").append(formattedPicture);
+        $(".biopic").attr("alt", "My picture");
         var formattedMsg = HTMLWelcomeMsg.replace("%data%",bio.welcomingMsg);
         $("#header").append(formattedMsg);
 
